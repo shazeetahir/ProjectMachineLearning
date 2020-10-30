@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Input datas</title>
+  </head>
+  <body>
+
+    <div class="container">
+
+
+      <h1 >
+         Please fill in your inputs
+
+      </h1>
+      <br>
+      
+      <form action = "/prediction" method = "POST">
+        <p>Own a car <input type = "number" name = "input_text1" style="font-size:18pt;height:120px;width:200px;"/></p>
+        <p>No. of Children <input type = "number" name = "input_text2" style="font-size:18pt;height:120px;width:200px;"/></p>
+        <p>Total Income <input type = "number" name = "input_text3" style="font-size:18pt;height:120px;width:200px;"/></p>
+        <p>Source of income <input type = "number" name = "input_text4" style="font-size:18pt;height:120px;width:200px;"/></p>
+        <p>Family Status <input type = "number" name = "input_text5" style="font-size:18pt;height:120px;width:200px;"/></p>
+        <p>Has Work Phone <input type = "number" name = "input_text6" style="font-size:18pt;height:120px;width:200px;"/></p>
+        <p>Has Phone <input type = "number" name = "input_text7" style="font-size:18pt;height:120px;width:200px;"/></p>
+        <p>Has Work Phone <input type = "number" name = "input_text8" style="font-size:18pt;height:120px;width:200px;"/></p>
+        <p>Has Email <input type = "number" name = "input_text9" style="font-size:18pt;height:120px;width:200px;"/></p>
+        <p>Family Members <input type = "number" name = "input_text10" style="font-size:18pt;height:120px;width:200px;"/></p>        
+        <p><input type = "submit" value = "GO" /></p>
+      </form>
+
+      
+
+      <button><a href="entrainement">Cliquez Ici pour voir le score</a></button>
+      
+      {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}
+      {% endif %}
+    </div>
+
+
+  </body>
+</html>
